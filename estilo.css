@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+}
+header{
+    font-family:"Raleway";
+    background-color:#F2B705;
+}
+body{
+  font-family:"Raleway";
+}
+body.nav-fixed-padding {
+  padding-top: 70px; /* Ajusta según la altura de tu nav */
+}
+
+
+.caja {
+  padding: 0;
+  background-color:#F2B705;
+  height: 40px;
+}
+nav {
+  position: sticky;
+  top: 0;
+  background-color: #7A8421;
+  padding: 10px 20px;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;      /* Verticalmente centrado */
+  justify-content: space-between; /* Distribuye entre menú y logo */
+  transition: all 0.3s ease;
+  height: 40px;
+}
+
+nav ul {
+  list-style-type: none; /*sin viñeta*/
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+nav ul li {
+  margin-right: 20px;
+}
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block; /*el elemento ocupa todo el ancho*/
+}
+nav ul li a:hover {
+  color: black;
+}
+.imagenlogo {
+  height: 40px;
+  object-fit: contain;
+  margin-right: 35px;
+}
+nav.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.info {
+  color: white;
+  height: 450px;
+  background-image: url(imagenes/verduras.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
+  background-color: rgba(0,0,0,0.5);
+  padding-top:200px ;
+  padding-left: 30px;
+}
+.info h1{
+  height: fit-content;
+  position: relative;
+  font-size: 50px;
+}
+.info h2{
+  height: fit-content;
+  position: relative;
+  font-size: 40px;
+}
+.publicidad{
+  width: 150px;
+  height: auto; /* Mantiene la proporción */
+}
+
+.grid-container {
+  display: flex; /* Usamos grid layout */
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
+  gap: 5px; /* Espacio entre los items */
+  padding: 10px;
+}
+
+.item {
+  text-align:left;
+  padding: 20px;
+  font-size: 30px;
+  border-radius: 8px; /* Opcional: esquinas redondeadas */
+}
