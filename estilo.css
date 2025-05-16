@@ -94,7 +94,7 @@ nav.fixed {
 }
 
 .grid-container {
-  display:grid;
+  display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); 
   grid-template-columns: repeat(4, 1fr); /* 3 columnas fijas */
   grid-auto-rows: minmax(100px, auto); /* cada fila tendrá al menos 100px de alto */
@@ -113,7 +113,7 @@ nav.fixed {
   background: white;
   border-radius: 12px;
   padding: 20px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.5) ;
   text-align: center;
   width: 270px;
   margin: auto;
@@ -177,4 +177,28 @@ nav.fixed {
   border: none;
   border-radius: 8px;
   cursor: pointer;
+}
+.footer {
+  width: 100%;
+  background-color: #8a9a2e;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  position: relative;
+  clear: both;
+}
+
+.footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex-wrap: wrap;
+}
+
+.footer li {
+  font-size: 16px;
 }
