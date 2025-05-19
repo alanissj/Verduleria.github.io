@@ -93,6 +93,8 @@ nav.fixed {
   align-items: center; /* Centrado vertical */
   width: 200px; /* ajusta según tu banner */
   height: auto; 
+  position: relative;
+  left: 1.5em;
 }
 
 
@@ -175,36 +177,44 @@ nav.fixed {
 
 .add-cart {
   background-color: #4caf50;
-  color: white;
+  color: black;
   padding: 10px 20px;
   border: none;
   border-radius: 8px;
   cursor: pointer;
 }
 .footer {
-  width: 100%;
-  background-color: #8a9a2e;
+  background-color: #6a861f;  
   color: white;
-  text-align: center;
-  padding: 20px 0;
-  box-sizing: border-box;
-  position: relative;
-  clear: both;
-}
-
-.footer ul {
+  font-weight: bold; /* negrita */
+  padding: 40px 20px;
   display: flex;
-  gap: 40px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
   flex-wrap: wrap;
+  justify-content: space-around;
+  text-align: center;
 }
 
-.footer li {
-  font-size: 16px;
+.footer div {
+  margin: 10px;
+  min-width: 200px;
 }
 
-.comunicate{
- justify-content: center;
+.footer img {
+  margin: 0 5px;
+  vertical-align: middle;
+  transition: transform 0.3s;
+}
+
+.footer img:hover {
+  transform: scale(1.2); /* Animación al pasar el mouse */
+}
+
+.copy {
+  width: 100%;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.ubi img{
+ height: 300px;
 }
