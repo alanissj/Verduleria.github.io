@@ -7,9 +7,11 @@ header{
     font-family:"Raleway";
     background-color:#F2B705;
 }
+
 body{
   font-family:"Raleway";
 }
+
 body.nav-fixed-padding {
   padding-top: 70px; /* Ajusta según la altura de tu nav */
 }
@@ -92,6 +94,7 @@ nav.fixed {
   width: 200px; /* ajusta según tu banner */
   height: auto; 
 }
+
 
 .grid-container {
   display: grid;
@@ -191,7 +194,6 @@ nav.fixed {
 
 .footer ul {
   display: flex;
-  justify-content: center;
   gap: 40px;
   list-style: none;
   padding: 0;
@@ -201,4 +203,8 @@ nav.fixed {
 
 .footer li {
   font-size: 16px;
+}
+
+.comunicate{
+ justify-content: center;
 }
