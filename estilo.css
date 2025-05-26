@@ -218,3 +218,15 @@ nav.fixed {
 .ubi img{
  height: 300px;
 }
+.redes{
+  display: grid;
+  grid-template-columns: auto;
+}
+.redes  img{
+  height: 50px;
+  width: 50px;
+}
+.comunicate img{
+  height: 50px;
+  width: 50px;
+}
