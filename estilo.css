@@ -248,7 +248,7 @@ nav.fixed {
 }
 
 
-* Dispositivos pequeños: teléfonos (hasta 600px) */
+/* Dispositivos pequeños: teléfonos (hasta 600px) */
 @media (max-width: 600px) {
   body {
     font-size: 14px;
