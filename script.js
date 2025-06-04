@@ -12,3 +12,4 @@ if (window.scrollY >= caja.offsetHeight) {
     body.classList.remove("nav-fixed-padding");
 }
 });
+

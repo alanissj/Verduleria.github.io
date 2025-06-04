@@ -184,49 +184,126 @@ nav.fixed {
   cursor: pointer;
 }
 .footer {
-  background-color: #6a861f;  
+  background-color: #4C7025; /* Verde más sobrio */
   color: white;
-  font-weight: bold; /* negrita */
+  font-weight: 500;
   padding: 40px 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
   text-align: center;
+  gap: 20px;
 }
 
 .footer div {
   margin: 10px;
-  min-width: 200px;
+  min-width: 220px;
+  flex: 1;
 }
 
 .footer img {
-  margin: 0 5px;
+  margin: 10px 5px;
   vertical-align: middle;
-  transition: transform 0.3s;
+  transition: transform 0.3s ease;
 }
 
 .footer img:hover {
-  transform: scale(1.2); /* Animación al pasar el mouse */
+  transform: scale(1.1);
 }
 
 .copy {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 30px;
   font-size: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+  padding-top: 15px;
 }
 
-.ubi img{
- height: 300px;
+.ubi img {
+  height: 180px;
+  border-radius: 10px;
 }
-.redes{
-  display: grid;
-  grid-template-columns: auto;
+
+.redes {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
 }
-.redes  img{
-  height: 50px;
-  width: 50px;
+
+.redes a img {
+  height: 40px;
+  width: 40px;
+  transition: transform 0.3s ease;
 }
-.comunicate img{
-  height: 50px;
-  width: 50px;
+
+.redes a img:hover {
+  transform: scale(1.2);
 }
+
+.comunicate img {
+  height: 40px;
+  width: 40px;
+  margin-bottom: 10px;
+}
+
+
+* Dispositivos pequeños: teléfonos (hasta 600px) */
+@media (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  .container {
+    flex-direction: column;
+    padding: 0.5em;
+  }
+
+  .card {
+    margin: 0.5em 0;
+    flex: 1 1 100%;
+  }
+
+  header, footer {
+    font-size: 14px;
+    padding: 0.5em;
+  }
+}
+
+/* Dispositivos medianos: tabletas (601px a 992px) */
+@media (min-width: 601px) and (max-width: 992px) {
+  body {
+    font-size: 16px;
+  }
+
+  .container {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 1 45%;
+    margin: 1em 0.5em;
+  }
+}
+
+/* Dispositivos grandes: laptops y escritorio (más de 992px) */
+@media (min-width: 993px) {
+  body {
+    font-size: 18px;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .card {
+    flex: 1 1 30%;
+  }
+}
+
+
