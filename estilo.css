@@ -4,6 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+body, html {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
 header{
     font-family:"Raleway";
     background-color:#F2B705;
