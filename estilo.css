@@ -119,6 +119,8 @@ nav.fixed {
 }
 
 .product-card {
+  width: 100%;
+  max-width: 100%;
   background: white;
   border-radius: 12px;
   padding: 5px;
