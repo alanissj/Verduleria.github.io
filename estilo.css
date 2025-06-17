@@ -269,17 +269,21 @@ nav.fixed {
   }
 
   header, footer {
-    font-size: 14px;
-    padding: 0.5em;
+    font-size: 10px;
+    padding: 0.15em;
   }
   .grid-container{
     display: block;
   }
   .info{
-    font-size: 7px;
-    padding-top: 20px;
+    font-size: 0,5px;
+    padding-top: 55px;
+    
   }
-  
+  .info h2{
+    padding-top: 23px;
+  }
+
 }
 
 /* Dispositivos medianos: tabletas (601px a 992px) */
