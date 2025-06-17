@@ -94,12 +94,10 @@ nav.fixed {
   font-size: 40px;
 }
 .publicidad {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
   display: block;
-  position: relative;
-  justify-content: center;
-  align-items: center; /* Centrado vertical */
-  width: 100%; 
-  height: auto; 
 }
 
 
@@ -127,7 +125,6 @@ nav.fixed {
   padding-bottom: 10px;
   box-shadow: 0 4px 20px rgba(0,0,0,0.5) ;
   text-align: center;
-  width: 270px;
   margin: auto;
   display: block;
   flex-direction: column;
