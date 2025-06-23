@@ -1,251 +1,291 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Verdufresh</title>
-    <link rel="stylesheet" href="estilo.css">
-</head>
-<header>
+    <link rel="stylesheet" href="estilo.css" />
+  </head>
+  <header>
     <div class="caja"></div>
     <div>
-        <nav>
-          <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
-            <ul class="nav-menu">
-              <li><a href="#productos">productos</a></li>
-              <li><a href="#frutas">frutas</a></li>
-              <li><a href="#verduras">verduras</a></li>
-              <li><a href="#ubicación">ubicación</a></li>  <!-- a href="#": cada enlace apunta a una sección o página -->
-              <li><a href="#contacto">contacto</a></li>
-            </ul>
-            <img class="imagenlogo" src="imagenes/LOGO2.png" alt="">
-        </nav>
+      <nav>
+        <img
+          class="imagenlogo"
+          src="imagenes/LOGO2.png"
+          alt="Verdufresh Logo"
+        />
+        <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <ul class="nav-menu">
+          <li><a href="#productos">productos</a></li>
+          <li><a href="#frutas">frutas</a></li>
+          <li><a href="#verduras">verduras</a></li>
+          <li><a href="#ubicación">ubicación</a></li>
+          <li><a href="#contacto">contacto</a></li>
+        </ul>
+        <div class="cart-container">
+          <img
+            src="imagenes/cart.png"
+            alt="Carrito"
+            class="cart-icon"
+            id="cart-icon"
+          />
+          <span class="cart-count" id="cart-count">0</span>
+        </div>
+      </nav>
     </div>
-</header>
-<body>
+  </header>
+  <body>
     <div class="info">
-        <h1>Elegí las frutas que mas te gusten</h1>
-        <h2>Las mas ricas de la zona</h2>
+      <h1>Elegí las frutas que mas te gusten</h1>
+      <h2>Las mas ricas de la zona</h2>
     </div>
-    <div class="item"><img class="publicidad" src="imagenes/publicidadhor.jpg" alt=""></div>
+    <div class="item">
+      <img class="publicidad" src="imagenes/publicidadhor.jpg" alt="" />
+    </div>
     <div class="grid-container">
-        
-        <div class="item"><div class="product-card">
-            <img id="brocoli" src="imagenes/brocoli.jpg" alt="Brócoli" />
-            <h3>Brócoli</h3>
-            <p>500g $700 | 1kg $1500</p>
-            <div class="price">$1,500.00</div>
-          
-            <div class="buttons">
-              <button>Brócoli 1kg</button>
-              <button>Brócoli 500g</button>
-            </div>
-          
-            <div class="quantity-control">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-          
-            <button class="add-cart">Agregar al carrito</button>
-          </div>
-          </div>
-          <div class="item"><div class="product-card">
-            <img src="imagenes/lechuga.jpg" alt="Lechuga" />
-            <h3>Lechuga</h3>
-            <p>500g $300 | 1kg $700</p>
-            <div class="price">$700.00</div>
-          
-            <div class="buttons">
-              <button>Lechuga 1kg</button>
-              <button>Lechuga 500g</button>
-            </div>
-          
-            <div class="quantity-control">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-          
-            <button class="add-cart">Agregar al carrito</button>
-          </div>
+      <div class="item">
+        <div class="product-card">
+          <img id="brocoli" src="imagenes/brocoli.jpg" alt="Brócoli" />
+          <h3>Brócoli</h3>
+          <p>500g $700 | 1kg $1500</p>
+          <div class="price">$1,500.00</div>
+
+          <div class="buttons">
+            <button>Brócoli 1kg</button>
+            <button>Brócoli 500g</button>
           </div>
 
-          <div class="item"><div class="product-card">
-            <img src="imagenes/tomate.jpg" alt="Tomate" />
-            <h3>Tomate</h3>
-            <p>500g $600 | 1kg $1000</p>
-            <div class="price">$1,000.00</div>
-          
-            <div class="buttons">
-              <button>Tomate 1kg</button>
-              <button>Tomate 500g</button>
-            </div>
-          
-            <div class="quantity-control">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-          
-            <button class="add-cart">Agregar al carrito</button>
-          </div>
-          </div>
-          
-          <div class="item"><div class="product-card">
-            <img src="imagenes/zanahoria.jpg" alt="zanahoria" />
-            <h3>Zanahoria</h3>
-            <p>500g $800 | 1kg $1400</p>
-            <div class="price">$1,400.00</div>
-          
-            <div class="buttons">
-              <button>Zanahoria 1kg</button>
-              <button>Zanahoria 500g</button>
-            </div>
-          
-            <div class="quantity-control">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-          
-            <button class="add-cart">Agregar al carrito</button>
-          </div>
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
           </div>
 
-          <div class="item"><div class="product-card">
-            <img id="Palta" src="imagenes/palta.jpg" alt="Palta" />
-            <h3>Palta</h3>
-            <p>1000g $700 | 1kg $1900</p>
-            <div class="price">$1,900.00</div>
-          
-            <div class="buttons">
-              <button>Palta 1kg</button>
-              <button>Palta 500g</button>
-            </div>
-          
-            <div class="quantity-control">
-              <button>-</button>
-              <span>1</span>
-              <button>+</button>
-            </div>
-            
-            <button class="add-cart">Agregar al carrito</button>
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
       </div>
+      <div class="item">
+        <div class="product-card">
+          <img src="imagenes/lechuga.jpg" alt="Lechuga" />
+          <h3>Lechuga</h3>
+          <p>500g $300 | 1kg $700</p>
+          <div class="price">$700.00</div>
+
+          <div class="buttons">
+            <button>Lechuga 1kg</button>
+            <button>Lechuga 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
       </div>
 
-      <div class="item"><div class="product-card">
-        <img id="Cebolla" src="imagenes/cebolla.jpg" alt="Cebolla" />
-        <h3>Cebolla</h3>
-        <p>500g $600 | 1kg $1900</p>
-        <div class="price">$1,000.00</div>
-      
-        <div class="buttons">
-          <button>Cebolla 1kg</button>
-          <button>Cebolla 500g</button>
+      <div class="item">
+        <div class="product-card">
+          <img src="imagenes/tomate.jpg" alt="Tomate" />
+          <h3>Tomate</h3>
+          <p>500g $600 | 1kg $1000</p>
+          <div class="price">$1,000.00</div>
+
+          <div class="buttons">
+            <button>Tomate 1kg</button>
+            <button>Tomate 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
         </div>
-      
-        <div class="quantity-control">
-          <button>-</button>
-          <span>1</span>
-          <button>+</button>
+      </div>
+
+      <div class="item">
+        <div class="product-card">
+          <img src="imagenes/zanahoria.jpg" alt="zanahoria" />
+          <h3>Zanahoria</h3>
+          <p>500g $800 | 1kg $1400</p>
+          <div class="price">$1,400.00</div>
+
+          <div class="buttons">
+            <button>Zanahoria 1kg</button>
+            <button>Zanahoria 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
         </div>
-        
-        <button class="add-cart">Agregar al carrito</button>
-  </div>
-  </div>
-  <div class="item"><div class="product-card">
-    <img id="Uva" src="imagenes/uva.png" alt="Uva" />
-    <h3>Uva</h3>
-    <p>500g $700 | 1kg $1300</p>
-    <div class="price">$1,300.00</div>
-  
-    <div class="buttons">
-      <button>Uva 1kg</button>
-      <button>Uva 500g</button>
+      </div>
+
+      <div class="item">
+        <div class="product-card">
+          <img id="Palta" src="imagenes/palta.jpg" alt="Palta" />
+          <h3>Palta</h3>
+          <p>1000g $700 | 1kg $1900</p>
+          <div class="price">$1,900.00</div>
+
+          <div class="buttons">
+            <button>Palta 1kg</button>
+            <button>Palta 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="product-card">
+          <img id="Cebolla" src="imagenes/cebolla.jpg" alt="Cebolla" />
+          <h3>Cebolla</h3>
+          <p>500g $600 | 1kg $1900</p>
+          <div class="price">$1,000.00</div>
+
+          <div class="buttons">
+            <button>Cebolla 1kg</button>
+            <button>Cebolla 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="product-card">
+          <img id="Uva" src="imagenes/uva.png" alt="Uva" />
+          <h3>Uva</h3>
+          <p>500g $700 | 1kg $1300</p>
+          <div class="price">$1,300.00</div>
+
+          <div class="buttons">
+            <button>Uva 1kg</button>
+            <button>Uva 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="product-card">
+          <img id="Papa" src="imagenes/papa.jpg" alt="Cebolla" />
+          <h3>Papa</h3>
+          <p>1000g $300 | 1kg $5000</p>
+          <div class="price">$5000.00</div>
+
+          <div class="buttons">
+            <button>Papa 1kg</button>
+            <button>Papa 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
+      </div>
+      <div class="item">
+        <div class="product-card">
+          <img id="Cebolla" src="imagenes/cebolla.jpg" alt="Cebolla" />
+          <h3>Cebolla</h3>
+          <p>1000g $600 | 1kg $1900</p>
+          <div class="price">$1,000.00</div>
+
+          <div class="buttons">
+            <button>Cebolla 1kg</button>
+            <button>Cebolla 500g</button>
+          </div>
+
+          <div class="quantity-control">
+            <button>-</button>
+            <span>1</span>
+            <button>+</button>
+          </div>
+
+          <button class="add-cart">Agregar al carrito</button>
+        </div>
+      </div>
     </div>
-  
-    <div class="quantity-control">
-      <button>-</button>
-      <span>1</span>
-      <button>+</button>
+  </body>
+
+  <footer class="footer">
+    <div class="comunicate">
+      <h3>📞 Contáctanos</h3>
+      <img src="imagenes/icons8-teléfono-50.png" alt="Teléfono" />
+      <p>3496-908760</p>
+      <p>contacto@verdufresh.com</p>
     </div>
-    
-    <button class="add-cart">Agregar al carrito</button>
-</div>
-</div>
-<div class="item"><div class="product-card">
-  <img id="Papa" src="imagenes/papa.jpg" alt="Cebolla" />
-  <h3>Papa</h3>
-  <p>1000g $300 | 1kg $5000</p>
-  <div class="price">$5000.00</div>
 
-  <div class="buttons">
-    <button>Papa 1kg</button>
-    <button>Papa 500g</button>
-  </div>
+    <div class="redes-sociales">
+      <h3>🔗 Redes sociales</h3>
+      <div class="redes">
+        <a href=" https://www.facebook.com/ "
+          ><img src="imagenes/facebook_5968764.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com/ "
+          ><img src="imagenes/instagram_4494488.png" alt="Instagram"
+        /></a>
+        <a href="https://x.com/?lang=es"
+          ><img src="imagenes/letter-x_14619693.png" alt="Twitter X"
+        /></a>
+        <a href="https://wa.me/3496418251"
+          ><img src="imagenes/whatsapp_4494494.png" alt="WhatsApp"
+        /></a>
+      </div>
+    </div>
 
-  <div class="quantity-control">
-    <button>-</button>
-    <span>1</span>
-    <button>+</button>
-  </div>
-  
-  <button class="add-cart">Agregar al carrito</button>
-</div>
-</div>
-<div class="item"><div class="product-card">
-  <img id="Cebolla" src="imagenes/cebolla.jpg" alt="Cebolla" />
-  <h3>Cebolla</h3>
-  <p>1000g $600 | 1kg $1900</p>
-  <div class="price">$1,000.00</div>
+    <div class="ubi">
+      <h3>📍 Ubicación</h3>
+      <a href="https://www.google.com/maps"
+        ><img src="imagenes/mapa.png" alt="Mapa de ubicación"
+      /></a>
+      <p>Urquiza 2035<br />Santa fe</p>
+    </div>
 
-  <div class="buttons">
-    <button>Cebolla 1kg</button>
-    <button>Cebolla 500g</button>
-  </div>
+    <p class="copy">© 2025 Verdufresh - Todos los derechos reservados</p>
+  </footer>
 
-  <div class="quantity-control">
-    <button>-</button>
-    <span>1</span>
-    <button>+</button>
-  </div>
-  
-  <button class="add-cart">Agregar al carrito</button>
-</div>
-</div>
+  <div id="cart-panel" class="cart-panel">
+    <h3>Tu carrito</h3>
+    <ul id="cart-items"></ul>
 
-  </div>
-      </body>
-     
-      <footer class="footer">
-  <div class="comunicate">
-    <h3>📞 Contáctanos</h3>
-    <img src="imagenes/icons8-teléfono-50.png" alt="Teléfono">
-    <p>3496-908760</p>
-    <p>contacto@verdufresh.com</p>
-  </div>
-
-  <div class="redes-sociales">
-    <h3>🔗 Redes sociales</h3>
-    <div class="redes">
-      <a href=" https://www.facebook.com/ "><img src="imagenes/facebook_5968764.png" alt="Facebook"></a>
-      <a href="https://www.instagram.com/ "><img src="imagenes/instagram_4494488.png" alt="Instagram"></a>
-      <a href="https://x.com/?lang=es"><img src="imagenes/letter-x_14619693.png" alt="Twitter X"></a>
-      <a href="https://wa.me/3496418251"><img src="imagenes/whatsapp_4494494.png" alt="WhatsApp"></a>
+    <div class="cart-buttons">
+      <button id="clear-cart" class="cart-action">Vaciar carrito</button>
+      <button id="checkout" class="cart-action">Finalizar compra</button>
     </div>
   </div>
 
-  <div class="ubi">
-    <h3>📍 Ubicación</h3>
-     <a href="https://www.google.com/maps"><img src="imagenes/mapa.png" alt="Mapa de ubicación"></a>
-    <p>Urquiza 2035<br>Santa fe</p>
-  </div>
-
-  <p class="copy">© 2025 Verdufresh - Todos los derechos reservados</p>
-</footer>
-
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </html>
-
