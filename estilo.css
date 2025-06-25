@@ -118,14 +118,32 @@ nav.fixed {
   padding-bottom: 40px;
 }
 
-.prod_titulo{
-  padding: 7px;
-  background-color: #7A8421;
-  width: 100%;
-  font-size: 34px;
+.prod_titulo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2rem;
   color: white;
-  font-weight: 600;
+  background: linear-gradient(90deg, #7A8421, #A4C639);
+  padding: 20px 0;
+  margin: 40px auto 20px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 700;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 600px;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 }
+.prod_titulo::after {
+  content: \"\";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #F2B705;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
 
 .grid-container {
   display: grid;
