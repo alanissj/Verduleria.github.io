@@ -2,27 +2,37 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <!-- Codificación en español -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Responsive -->
     <title>Verdufresh</title>
     <link rel="stylesheet" href="estilo.css" />
+    <!-- Hoja de estilos -->
   </head>
+
   <header>
+    <!-- Encabezado con logo y menú -->
     <div class="caja"></div>
+    <!-- barra superior decorativa -->
     <div>
       <nav>
+        <!-- barra de navegación principal -->
         <img
           class="imagenlogo"
           src="imagenes/LOGO2.png"
           alt="Verdufresh Logo"
         />
         <button class="menu-toggle" aria-label="Abrir menú">&#9776;</button>
+        <!-- menú hamburguesa -->
         <ul class="nav-menu">
+          <!-- enlaces navegación -->
           <li><a href="#productos">productos</a></li>
           <li><a href="#redes">redes</a></li>
           <li><a href="#ubicacion">ubicación</a></li>
           <li><a href="#comuni">contacto</a></li>
         </ul>
         <div class="cart-container">
+          <!-- icono carrito -->
           <img
             src="imagenes/cart.png"
             alt="Carrito"
@@ -30,218 +40,218 @@
             id="cart-icon"
           />
           <span class="cart-count" id="cart-count">0</span>
+          <!-- contador carrito -->
         </div>
       </nav>
     </div>
   </header>
+
   <body>
     <div class="info">
+      <!-- sección principal con fondo -->
       <h1>Elegí las frutas que mas te gusten</h1>
       <h2>Las mas ricas de la zona</h2>
     </div>
+
     <div class="item_pub">
-      <img class="publicidad" src="imagenes/publicidadhor.jpg" alt="" />
+      <!-- banner horizontal publicitario -->
+      <img
+        class="publicidad"
+        src="imagenes/publicidadhor.jpg"
+        alt="Publicidad"
+      />
     </div>
+
     <div class="prod" id="productos">
       <h2 class="prod_titulo">productos</h2>
+      <!-- título productos -->
     </div>
+
+    <!-- Contenedor de productos con tarjetas -->
     <div class="grid-container">
+      <!-- producto 1 -->
       <div class="item">
         <div class="product-card">
           <img id="brocoli" src="imagenes/brocoli.jpg" alt="Brócoli" />
           <h3>Brócoli</h3>
           <p>500g $700 | 1kg $1500</p>
           <div class="price">$1,500.00</div>
-
           <div class="buttons">
             <button>Brócoli 1kg</button>
             <button>Brócoli 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
+
+      <!-- producto 2 -->
       <div class="item">
         <div class="product-card">
           <img src="imagenes/lechuga.jpg" alt="Lechuga" />
           <h3>Lechuga</h3>
           <p>500g $300 | 1kg $700</p>
           <div class="price">$700.00</div>
-
           <div class="buttons">
             <button>Lechuga 1kg</button>
             <button>Lechuga 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
 
+      <!-- producto 3 -->
       <div class="item">
         <div class="product-card">
           <img src="imagenes/tomate.jpg" alt="Tomate" />
           <h3>Tomate</h3>
           <p>500g $600 | 1kg $1000</p>
           <div class="price">$1,000.00</div>
-
           <div class="buttons">
             <button>Tomate 1kg</button>
             <button>Tomate 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
 
+      <!-- producto 4 -->
       <div class="item">
         <div class="product-card">
-          <img src="imagenes/zanahoria.jpg" alt="zanahoria" />
+          <img src="imagenes/zanahoria.jpg" alt="Zanahoria" />
           <h3>Zanahoria</h3>
           <p>500g $800 | 1kg $1400</p>
           <div class="price">$1,400.00</div>
-
           <div class="buttons">
             <button>Zanahoria 1kg</button>
             <button>Zanahoria 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
 
+      <!-- producto 5 -->
       <div class="item">
         <div class="product-card">
           <img id="Palta" src="imagenes/palta.jpg" alt="Palta" />
           <h3>Palta</h3>
           <p>1000g $700 | 1kg $1900</p>
           <div class="price">$1,900.00</div>
-
           <div class="buttons">
             <button>Palta 1kg</button>
             <button>Palta 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
 
+      <!-- producto 6 -->
       <div class="item">
         <div class="product-card">
           <img id="Cebolla" src="imagenes/cebolla.jpg" alt="Cebolla" />
           <h3>Cebolla</h3>
           <p>500g $600 | 1kg $1900</p>
           <div class="price">$1,000.00</div>
-
           <div class="buttons">
             <button>Cebolla 1kg</button>
             <button>Cebolla 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
+
+      <!-- producto 7 -->
       <div class="item">
         <div class="product-card">
           <img id="Uva" src="imagenes/uva.png" alt="Uva" />
           <h3>Uva</h3>
           <p>500g $700 | 1kg $1300</p>
           <div class="price">$1,300.00</div>
-
           <div class="buttons">
             <button>Uva 1kg</button>
             <button>Uva 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
+
+      <!-- producto 8 -->
       <div class="item">
         <div class="product-card">
-          <img id="Papa" src="imagenes/papa.jpg" alt="Cebolla" />
+          <img id="Papa" src="imagenes/papa.jpg" alt="Papa" />
           <h3>Papa</h3>
           <p>1000g $300 | 1kg $5000</p>
           <div class="price">$5000.00</div>
-
           <div class="buttons">
             <button>Papa 1kg</button>
             <button>Papa 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
+
+      <!-- producto 9  -->
       <div class="item">
         <div class="product-card">
           <img id="Cebolla" src="imagenes/cebolla.jpg" alt="Cebolla" />
           <h3>Cebolla</h3>
           <p>1000g $600 | 1kg $1900</p>
           <div class="price">$1,000.00</div>
-
           <div class="buttons">
             <button>Cebolla 1kg</button>
             <button>Cebolla 500g</button>
           </div>
-
           <div class="quantity-control">
             <button>-</button>
             <span>1</span>
             <button>+</button>
           </div>
-
           <button class="add-cart">Agregar al carrito</button>
         </div>
       </div>
     </div>
   </body>
 
+  <!-- pie de página -->
   <footer class="footer">
     <div class="comunicate" id="comuni">
       <h3>📞 Contáctanos</h3>
@@ -249,14 +259,13 @@
       <p>3496-908760</p>
       <p>contacto@verdufresh.com</p>
     </div>
-
     <div class="redes-sociales" id="redes">
       <h3>🔗 Redes sociales</h3>
       <div class="redes">
-        <a href=" https://www.facebook.com/ "
+        <a href="https://www.facebook.com/"
           ><img src="imagenes/facebook_5968764.png" alt="Facebook"
         /></a>
-        <a href="https://www.instagram.com/ "
+        <a href="https://www.instagram.com/"
           ><img src="imagenes/instagram_4494488.png" alt="Instagram"
         /></a>
         <a href="https://x.com/?lang=es"
@@ -267,7 +276,6 @@
         /></a>
       </div>
     </div>
-
     <div class="ubi" id="ubicacion">
       <h3>📍 Ubicación</h3>
       <a href="https://www.google.com/maps"
@@ -275,19 +283,19 @@
       /></a>
       <p>Urquiza 2035<br />Santa fe</p>
     </div>
-
     <p class="copy">© 2025 Verdufresh - Todos los derechos reservados</p>
   </footer>
 
+  <!-- panel de carrito -->
   <div id="cart-panel" class="cart-panel">
     <h3>Tu carrito</h3>
     <ul id="cart-items"></ul>
-
     <div class="cart-buttons">
       <button id="clear-cart" class="cart-action">Vaciar carrito</button>
       <button id="checkout" class="cart-action">Finalizar compra</button>
     </div>
   </div>
 
+  <!-- script funcional -->
   <script src="script.js"></script>
 </html>
